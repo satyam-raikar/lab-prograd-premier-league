@@ -4,7 +4,16 @@ let managerAge = 78;
 let currentTeam = "Manchester FC";
 let trophiesWon = 27;
 
+
 //Write your function here
+
+function createManager(managerName,managerAge,currentTeam,trophiesWon){
+  manager_detail=[managerName,managerAge,currentTeam,trophiesWon];
+  return manager_detail;
+}
+
+
+
 
 // Don't edit the following code
 try {
@@ -23,6 +32,23 @@ var formation = [4, 4, 3];
 
 //write your function here
 
+function createFormation(arrayy){
+
+  if(arrayy.length == 0){
+    return null;
+  }
+
+  let formationObj = {
+    defender: arrayy[0],
+    midfield: arrayy[1],
+    forward: arrayy[2]
+  };
+  return formationObj;
+
+}
+
+
+
 // Dont edit the following code
 
 try {
@@ -32,6 +58,11 @@ try {
 }
 
 //Progression 3 - Filter players that debuted in ___ year
+
+function filterByDebut(year){
+
+ 
+}
 
 //Progression 4 - Filter players that play at the position _______
 
